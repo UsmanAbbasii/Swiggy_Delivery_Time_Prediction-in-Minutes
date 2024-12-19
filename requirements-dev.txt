@@ -7,3 +7,4 @@ lightgbm
 mlflow
 joblib
 pytest
+dvc[s3]
