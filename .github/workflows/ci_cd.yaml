@@ -19,7 +19,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
-          pip install dvc  # Install DVC
+          pip install "dvc[s3]"  # Install DVC with S3 support
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
