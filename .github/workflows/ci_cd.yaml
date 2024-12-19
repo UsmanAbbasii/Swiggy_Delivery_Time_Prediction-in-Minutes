@@ -30,7 +30,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
           pip install "dvc[dagshub]"  # Install DVC with DAGsHub support
+          pip install "dvc[s3]
           pip install pytest mlflow
+          
 
       # Step 4: Configure AWS credentials
       - name: Configure AWS Credentials
