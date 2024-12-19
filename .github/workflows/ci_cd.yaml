@@ -21,6 +21,7 @@ jobs:
           pip install -r requirements-dev.txt
           pip install "dvc[s3]"  # Install DVC with S3 support
           pip install pytest     # Install pytest explicitly
+          pip install mlflow     # Install mlflow explicitly
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
